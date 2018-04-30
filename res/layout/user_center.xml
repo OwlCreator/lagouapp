@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#458B74" >
+
+        <Button
+            android:id="@+id/bt_user_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/fanhui_iocs" />
+
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="25dip"
+            android:layout_alignTop="@id/bt_user_back"
+            android:layout_toRightOf="@id/bt_user_back"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="#ffffff"
+            android:textSize="30dip" />
+        </RelativeLayout>
+        
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="85dip"
+        android:background="@drawable/user_logo"
+        android:layout_marginTop="51dip" >
+        <ImageView 
+            android:id="@+id/im_user_logo"
+            android:layout_height="50dip"
+            android:layout_width="50dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/baitou_ico" />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/im_user_logo"
+            android:text="王丹丹  欢迎回来"
+            android:layout_marginLeft="100dip"
+            android:textSize="18dip" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dip"
+        android:orientation="vertical" >
+        <TableLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|middle|end"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|end" >
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/bianji" />
+            <Button
+                android:id="@+id/bt_uc_upload"
+                android:layout_width="220dip"
+                android:layout_height="35dip"
+                android:text="简历上传"
+                android:textSize="20dip"
+                android:gravity="left"
+                android:layout_marginTop="5dip"
+                android:background="#ffffff" />
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/qianjin_ioc" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|end">
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/yulan" />
+            <Button
+                android:id="@+id/bt_uc_review"
+                android:layout_width="220dip"
+                android:layout_height="35dip"
+                android:text="简历预览"
+                android:textSize="20dip"
+                android:gravity="left"
+                android:layout_marginTop="5dip"
+                android:background="#ffffff"/>
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/qianjin_ioc" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|end">
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/toudi" />
+            <Button
+                android:id="@+id/bt_uc_toudi"
+                android:layout_width="220dip"
+                android:layout_height="35dip"
+                android:text="投递记录"
+                android:textSize="20dip"
+                android:gravity="left"
+                android:layout_marginTop="5dip"
+                android:background="#ffffff"/>
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/qianjin_ioc" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|end">
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/shouc" />
+            <Button
+                android:id="@+id/bt_uc_shouc"
+                android:layout_width="220dip"
+                android:layout_height="35dip"
+                android:text="职位收藏夹	"
+                android:textSize="20dip"
+                android:gravity="left"
+                android:layout_marginTop="5dip"
+                android:background="#ffffff"/>
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/qianjin_ioc" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|end">
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/qiugai" />
+            <Button
+                android:id="@+id/bt_uc_edit"
+                android:layout_width="220dip"
+                android:layout_height="35dip"
+                android:text="修改密码"
+                android:textSize="20dip"
+                android:gravity="left"
+                android:layout_marginTop="5dip"
+                android:background="#ffffff"/>
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/qianjin_ioc" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:divider="@drawable/line"
+            android:showDividers="beginning|end">
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/tuichu" />
+            <Button
+                android:id="@+id/bt_uc_back"
+                android:layout_width="220dip"
+                android:layout_height="35dip"
+                android:text="退出登录"
+                android:textSize="20dip"
+                android:gravity="left"
+                android:layout_marginTop="5dip"
+                android:background="#ffffff"/>
+             <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/qianjin_ioc" />
+        </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tv_item_jobname"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="java软件工程师"
+        android:textColor="#000000"
+        android:textSize="25dip" />
+
+     <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_jobname"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="2dip"
+        android:text="阿里巴巴集团"
+        android:textSize="20dip"
+        android:textColor="#000000" />
+     <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_company"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="2dip"
+        android:text="江苏-南京"
+        android:textSize="20dip"
+        android:textColor="#80000000" />
+     
+     <Button 
+         android:id="@+id/bt_qianjin"
+         android:layout_width="30dip"
+         android:layout_height="30dip"
+         android:layout_alignParentRight="true"
+         android:background="@+id/qianjin_ioc" />
+     <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/bt_qianjin"
+        android:text="7-13"
+        android:textSize="15dip" />
+     
+     <ImageView 
+         android:id="@+id/im_item_shouc"
+         android:layout_width="30dip"
+         android:layout_height="30dip"
+         android:src="@drawable/shouc_hs"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/bt_qianjin" />
+     
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="工资"
+         android:textColor="#60b42b"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/im_item_shouc"
+          android:textSize="15dip"  />
+</RelativeLayout>

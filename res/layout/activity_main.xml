@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="15px"
+            android:text="首页" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15px"
+            android:layout_weight="1"
+            android:text="公司" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="15px"
+            android:text="简历" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            
+            android:textSize="15px"
+            android:background="#458B74"
+            android:text="登陆|注册"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入职位名称，如：产品经理"
+            android:textSize="18px" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="#458B74"
+            android:text="搜索"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门搜索： Java PHP Android IOS 前端 UI 实习"
+        android:textSize="15px"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="5dp"
+        />
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="90dp"
+        >
+        <TableRow 
+            >
+            <TextView
+                android:text="职位信息"
+                android:gravity="center_horizontal"
+                android:padding="60px"
+                />
+             <TextView
+                android:text="职位信息"
+                android:gravity="center_horizontal"
+                android:padding="60px"
+                />
+        </TableRow>
+         <TableRow>
+            <TextView
+                android:text="职位信息"
+                android:gravity="center_horizontal"
+                android:padding="60px"
+                />
+             <TextView
+                android:text="职位信息"
+                android:gravity="center_horizontal"
+                android:padding="60px"
+                />
+        </TableRow>
+        <TableRow 
+            >
+            <TextView
+                android:text="职位信息"
+                android:gravity="center_horizontal"
+                android:padding="60px"
+                />
+             <TextView
+                android:text="职位信息"
+                android:gravity="center_horizontal"
+                android:padding="60px"
+                />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

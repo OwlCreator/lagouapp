@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#458B74" >
+
+        <Button
+            android:id="@+id/bt_lg_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/fanhui_iocs" />
+
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="25dip"
+            android:layout_alignTop="@id/bt_lg_back"
+            android:layout_toRightOf="@id/bt_lg_back"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="30dip" />
+        
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="10dip" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/font_yonghu" />
+
+            <EditText
+                android:id="@+id/et_lg_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginRight="5dip"
+                android:hint="请输入用户名称                      " />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/iconfont_mima" />
+
+            <EditText
+                android:id="@+id/et_lg_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginRight="5dip"
+                android:hint="请输入密码" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#458B74"
+            android:textColor="#ffffff"
+            android:text="登录" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dip"
+            android:text="------------------还没有账号------------------" />
+       <Button 
+           android:id="@+id/bt_lg_regiest"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="免费注册"
+           android:textColor="#5FB52C"
+           android:background="#ffffff"
+           />
+    </TableLayout>
+
+</RelativeLayout>
